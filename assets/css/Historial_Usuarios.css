@@ -1,0 +1,99 @@
+.barra-superior {
+background-color: #c40000;
+color: white;
+padding: 10px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+}
+
+/* Izquierda */
+.barra-izquierda img {
+height: 40px;
+background: white;
+padding: 5px;
+border-radius: 8px;
+}
+
+/* Derecha */
+.barra-derecha {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.usuario {
+font-size: 16px;
+}
+
+.enlace-salir {
+color: white;
+font-weight: bold;
+text-decoration: underline;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.enlace-salir:hover {
+color: #ffd6d6;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+.barra-superior {
+flex-direction: column;
+height: auto;
+padding: 15px;
+gap: 10px;
+}
+
+.barra-derecha {
+justify-content: center;
+}
+}
+
+.btn-accion-pequeño {
+background-color: white;
+color: black;
+border: 1px solid gray;
+padding: 4px 10px;
+margin: 2px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 12px;
+font-weight: bold;
+transition: background-color 0.3s ease;
+}
+
+.btn-accion-pequeño:hover {
+background-color: #f0f0f0;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th,
+td {
+padding: 10px;
+text-align: center;
+border: 1px solid #ccc;
+font-size: 14px;
+}
+
+th {
+background-color: #c40000;
+color: white;
+}
+
+.form-card {
+background: white;
+padding: 20px;
+border-radius: 8px;
+margin-top: 20px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}

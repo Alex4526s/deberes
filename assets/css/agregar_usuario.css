@@ -1,0 +1,76 @@
+.barra-superior {
+  background-color: #c40000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.barra-izquierda img {
+  height: 40px;
+  background: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.barra-derecha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.usuario {
+  font-size: 16px;
+}
+
+.enlace-salir {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.enlace-salir:hover {
+  color: #ffd6d6;
+}
+
+@media (max-width: 600px) {
+  .barra-superior {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .barra-derecha {
+    justify-content: center;
+  }
+}
+
+/* 🔥 Estilos para el mensaje */
+.mensaje {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mensaje-exito {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.mensaje-advertencia {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.mensaje-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}

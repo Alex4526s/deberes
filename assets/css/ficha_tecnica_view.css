@@ -1,0 +1,120 @@
+.barra-superior {
+    background-color: #c40000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+/* Izquierda */
+.barra-izquierda img {
+    height: 40px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Derecha */
+.barra-derecha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.usuario {
+    font-size: 16px;
+}
+
+.enlace-salir {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.enlace-salir:hover {
+    color: #ffd6d6;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .barra-superior {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .barra-derecha {
+        justify-content: center;
+    }
+}
+
+.tabla-historial-container {
+    overflow-x: auto;
+}
+
+.tabla-historial {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-historial th,
+.tabla-historial td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tabla-historial th {
+    background-color: #c40000;
+    color: white;
+}
+
+/* 📱 Responsivo solo para esta tabla */
+@media (max-width: 768px) {
+
+    .tabla-historial,
+    .tabla-historial thead,
+    .tabla-historial tbody,
+    .tabla-historial th,
+    .tabla-historial td,
+    .tabla-historial tr {
+        display: block;
+    }
+
+    .tabla-historial thead tr {
+        display: none;
+    }
+
+    .tabla-historial tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 8px;
+        background: white;
+    }
+
+    .tabla-historial td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tabla-historial td::before {
+        content: attr(data-label);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
